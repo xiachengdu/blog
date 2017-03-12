@@ -5,6 +5,6 @@
     $db_password = "rht102";
     $db_database = "blog";
 
-    $config_blogname = "特塔网";
+    $config_blogname = "TerTest";
     $config_basedir = "http://localhost/blog";
 ?>
