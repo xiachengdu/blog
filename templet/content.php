@@ -13,15 +13,25 @@
         echo "Opps!..there is something wrong here";
     }else{
         while($row = mysql_fetch_assoc($result)) {
-            echo "{$row['post_title']} <br>";
-            echo "{$row['post_author']} <br>";
-            echo "{$row['post_date']} <br>";
-            echo "{$row['post_content']} <br>";
+            ?>
+            <div class="post_title">
+                <?php echo "{$row['post_title']} <br>";?>
+            </div>
+            <div class="post_author">
+                <?php echo "{$row['post_author']} <br>";?>
+            </div>
+            <div class="post_date">
+                <?php echo "{$row['post_date']} <br>";?>
+            </div>
+            <div class="post_content">
+                <?php echo "{$row['post_content']} <br>";?>
+            </div>
+            <?php
         }
     }
 ?>
-//TODO
-<div>
-    <a href="article.php?id=<?php echo "{$id}-1" ?>">Last</a>
-    <a href="article.php?id=<?php echo "{$id}+1"?>">Next</a>
+<!--TODO 功能已实现，待优化--> 
+<div class="index">
+    <a class="last_page" href="article.php?id=<?php $last=$id-1;echo "{$last}"; ?>">Last</a>
+    <a class="next_page" href="article.php?id=<?php $next=$id+1;echo "{$next}"; ?>">Next</a>
 </div>

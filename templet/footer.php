@@ -1,5 +1,5 @@
+<div class="footer_text"><?php echo $config_foottext; ?></div>
 <?php
-    echo "<br>浙ICP10086号<br>";
     echo "</body>";
     echo "</html>";
  ?>

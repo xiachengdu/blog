@@ -1,0 +1,24 @@
+/*标题*/
+h1 {
+	text-align: center;
+}
+.post_title {
+	color: red;
+	text-align: center;
+}
+.footer_text {
+	text-align: center;
+}
+.index #last_page {
+	text-align: left;
+}
+.index #next_page {
+	text-align: right;
+}
+.post_author {
+	text-align: center;
+	color: blue;
+}
+.post_date {
+	text-align: right;
+}
