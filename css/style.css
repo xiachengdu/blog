@@ -1,24 +1,91 @@
 /*标题*/
 h1 {
 	text-align: center;
+	color: red;
+}
+/*摘要卡*/
+.digestcard {
+	padding: 14px 20px; 
+	border:2px;
+	border-color: yellow;
+	border-style: solid;
+}
+.digest {
+	border:2px;
+	border-color: blue;
+	border-style: solid;
+}
+#all {
+	margin: auto;
+	width:984px;
+	border:2px;
+	border-color: blue;
+	border-style: solid;
+}
+#indexs {	
+	border:2px;
+	border-color: red;
+	border-style: solid;
+	height: 60px;
+}
+#main_page {
+	
+	width: 980px;
+	height: 800px;
+	border:2px;
+	border-color: blue;
+	border-style: solid;
+}
+#content {
+	padding: 14px 20px;
+	float: left;
+	width: 600px;
+	height: 96%;
+	border: 2px;
+	border-color: red;
+	border-style: solid;
+	font-family: "Book Antiqua";
+}
+#slidebar {
+	padding: 14px 20px;
+	float: right;
+	width: 292px;
+	height: 96%;
+	border:2px;
+	border-color: red;
+	border-style: solid;
 }
 .post_title {
-	color: red;
+	color: black;
 	text-align: center;
-}
-.footer_text {
-	text-align: center;
-}
-.index #last_page {
-	text-align: left;
-}
-.index #next_page {
-	text-align: right;
+	font-family: "Bernard MT Condensed";
+	font-size: x-large;
 }
 .post_author {
 	text-align: center;
-	color: blue;
+	color: black;
 }
+#footer_text {
+	padding:14px 20px;
+	text-align: center;
+	height: 60px;
+	border:2px;
+	border-color: red;
+	border-style: solid;
+}
+.index {
+	text-align:center;
+	width:100%;
+}
+.last_page {
+	color:orangered;
+	text-align: left;
+}
+.next_page {
+	color:orangered;
+	text-align: right;
+}
+
 .post_date {
 	text-align: right;
 }
