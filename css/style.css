@@ -22,7 +22,8 @@ h1 {
 	border-color: blue;
 	border-style: solid;
 }
-#indexs {	
+#indexs {
+	padding:14px 20px;
 	border:2px;
 	border-color: red;
 	border-style: solid;
@@ -36,6 +37,16 @@ h1 {
 	border-color: blue;
 	border-style: solid;
 }
+#post_list {
+	padding: 14px 20px;
+	float: left;
+	width: 600px;
+	height: 96%;
+	border: 2px;
+	border-color: red;
+	border-style: solid;
+	font-family: "Book Antiqua";
+}
 #content {
 	padding: 14px 20px;
 	float: left;
@@ -45,6 +56,9 @@ h1 {
 	border-color: red;
 	border-style: solid;
 	font-family: "Book Antiqua";
+}
+#edit_post_content {
+	padding:14px 20px;
 }
 #slidebar {
 	padding: 14px 20px;

@@ -35,11 +35,23 @@
             <?php
         }
     }
+    //查询前一个id
+    $sql_pre = "select t.id from blog_posts t where t.id < {$id} order by t.id desc limit 1";
+    $result_pre = mysql_query($sql_pre);
+    while($row_pre = mysql_fetch_assoc($result_pre)) {
+        $pre = $row_pre['id'];
+    }
+    //查询后一个id
+    $sql_next = "select t.id from blog_posts t where t.id > {$id} order by t.id asc limit 1";
+    $result_next = mysql_query($sql_next);
+    while($row_next = mysql_fetch_assoc($result_next)) {
+        $next = $row_next['id'];
+    }
 ?>
-        <!--TODO 功能已实现，待优化-->
+        <!--TODO 功能已实现，待优化，未完成部分：最前面和最后面报SQL错误，已实现不连续查找-->
         <div class="index">
-    <a class="last_page" href="article.php?id=<?php $last=$id-1;echo "{$last}"; ?>">上一篇</a>
-    <a class="next_page" href="article.php?id=<?php $next=$id+1;echo "{$next}"; ?>">下一篇</a>
+    <a class="last_page" href="article.php?id=<?php echo "{$pre}"; ?>">上一篇</a>
+    <a class="next_page" href="article.php?id=<?php echo "{$next}"; ?>">下一篇</a>
 </div>
 </div>
 <div id="slidebar">

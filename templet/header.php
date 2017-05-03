@@ -15,7 +15,7 @@
             </div>
             <div id = "indexs">
             <a href = "/blog">首页</a>
-            <a href = "">模块一</a>
+            <a href = "/blog/post.php">新增</a>
             <a href = "">模块二</a>
             <a href = "">模块三</a>
             </div> 

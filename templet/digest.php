@@ -6,7 +6,7 @@
     mysql_select_db($db_database,$db);
 ?>
 <div id = "main_page">
-    <div id = "content">
+    <div id = "post_list">
 <?php
     $sql = "select t.id,t.post_author,t.post_date,t.post_title from blog_posts t";
     $result = mysql_query($sql);
